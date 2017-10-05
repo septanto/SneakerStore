@@ -1,0 +1,13 @@
+<div *ngFor="let p of ProductList">
+  <div class="card col-4">
+  <a href="">
+    <div>
+      <img src="http://localhost:8000{{p.image}}">
+    </div>
+    <div class="card-price">
+      <p class="lead">{{p.name}}</p>
+      <p class="price">IDR {{p.unit_price}}</p>
+    </div>
+    </a>
+  </div>
+</div>

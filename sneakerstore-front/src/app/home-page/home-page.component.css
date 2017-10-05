@@ -1,0 +1,28 @@
+img {
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+div.card-price {
+    background-color: rgb(65, 65, 65);
+    text-align: center;
+    color: white;
+    width: 70%;
+    position: relative;
+    left: 15%;
+    bottom: 1.5rem;
+}
+
+p.lead {
+    text-transform: capitalize;
+    padding: 3px;
+    margin: 0px;
+}
+
+p.price {
+    font-size: 0.83rem;
+    font-style: italic;
+    padding: 3px;
+    margin: 0px;
+}

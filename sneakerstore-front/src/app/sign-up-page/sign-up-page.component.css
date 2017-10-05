@@ -1,0 +1,32 @@
+div {
+    position: relative;
+    left: 35%;
+}
+
+#signup {
+    text-align: center;
+    position: relative;
+    top: 3.5rem;
+}
+
+input  {
+    width: 70%;
+    padding: 0.8rem 1rem;
+    margin: 1rem;
+    border: 0.05rem solid black;
+    border-radius: 0.3rem;
+    box-sizing: border-box;
+}
+
+input:focus {
+    border: 0.06rem solid rgba(255, 0, 221, 0.87);
+}
+
+a:hover {
+    color: rgba(255, 0, 221, 0.87);
+}
+
+button {
+    padding: 0.5rem 1rem;
+    box-sizing: border-box;
+}
