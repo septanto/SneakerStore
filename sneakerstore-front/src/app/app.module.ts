@@ -8,6 +8,8 @@ import { PageHeaderComponent } from './page-header/page-header.component';
 import { SignInPageComponent } from './sign-in-page/sign-in-page.component';
 import { SignUpPageComponent } from './sign-up-page/sign-up-page.component';
 import { RouterModule } from '@angular/router';
+import { ProductComponent } from './product/product.component';
+import { ProductDetailsComponent } from './product-details/product-details.component';
 
 @NgModule({
   declarations: [
@@ -15,14 +17,18 @@ import { RouterModule } from '@angular/router';
     HomePageComponent,
     PageHeaderComponent,
     SignInPageComponent,
-    SignUpPageComponent
+    SignUpPageComponent,
+    ProductComponent,
+    ProductDetailsComponent
   ],
   imports: [
     BrowserModule, HttpModule, FormsModule,
     RouterModule.forRoot([
       { path: '', component: HomePageComponent },
       { path: 'signin/signup', component: SignUpPageComponent },
-      { path: 'signin', component: SignInPageComponent }
+      { path: 'signin', component: SignInPageComponent },
+      { path: 'product/:product_id', component: ProductComponent },
+      { path: 'productdetails/:product_id', component: ProductDetailsComponent } // slash + : untuk parameter
     ])
   ],
   providers: [],

@@ -23,6 +23,8 @@ Route::group(['prefix'=>'user'], function() {
 });
 
 Route::group(['prefix'=>'product'], function() {
-    // Route::get('/getallproduct', 'ProductController@GetAllProduct');
-    Route::get('/getallproduct', 'ProductController@GetAllProduct')->middleware('jwt.auth'); //->Jika ingin ditambahkan authentication
+    Route::get('/getallproduct', 'ProductController@GetAllProduct');
+    // Route::get('/getallproduct', 'ProductController@GetAllProduct')->middleware('jwt.auth'); //->Jika ingin ditambahkan authentication
+    Route::post('/saveproductimage', 'ProductController@SaveProductImage');
+    Route::get('/getproductbyid', 'ProductController@GetProductById');
 });

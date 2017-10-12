@@ -1,14 +1,22 @@
+.row {
+    margin-bottom: 1rem;
+}
+
 #menu-set {
     float: right;
 }
 
-h2 {
-    border-bottom: 7px solid black;
-    margin: 0px;
-    padding: 0px;
-    padding-bottom: 5px;
-    width: 170px;
-    font-size: 2.5rem;
+div.head {
+    border-bottom: 0.25rem solid black;
+    margin: 0rem;
+    padding: 0rem;
+    width: 13%;
+    margin-left: 3.5rem;
+}
+
+p {
+    margin: 0rem;
+    font-size: 2rem;
 }
 
 a.header:hover {
@@ -65,10 +73,13 @@ li a:hover {
 }
 .menu {
     position: relative;
-    top: 4.9rem;
+    top: 4rem;
+    float: right;
+    margin-right: 3.5rem;
 }
 
 ul.nav {
     position: relative;
     right: 2.2rem;
+    bottom: 0.5rem;
 }

@@ -31,10 +31,12 @@ export class SignInPageComponent implements OnInit {
         this.router.navigate(['/']);
         // sessionStorage.setItem('', ''); -> mau pake session storage juga bisa
         console.log(result.json().token);
-      }, error => {
-
-      }
+      }, error => {}
     );
   }
 
+  redirectToProduct() {
+    const productId = 1;
+    this.router.navigate(['/product', productId]);
+  }
 }

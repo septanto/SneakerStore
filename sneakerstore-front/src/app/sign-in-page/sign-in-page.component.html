@@ -1,10 +1,15 @@
 <div class="col-4">
   <form action="" id="signin">
-  <strong>Sign in to ZneakerZ Store</strong><br><br>
-  <input type="email" name="email" value="" placeholder="Email" [(ngModel)]="email"><br>
-  <input type="password" name="password" id="" placeholder="Password" [(ngModel)]="password"><br>
-  <button type="submit" (click)="logIn()">Sign in</button>
-  <br>
-  <p>Don't have an account?<br> Please <a href="" routerLink="signup">click here</a> to register</p>
-</form>
+    <strong>Sign in to ZneakerZ Store</strong>
+    <br>
+    <br>
+    <input type="email" name="email" value="" placeholder="Email" [(ngModel)]="email">
+    <br>
+    <input type="password" name="password" id="" placeholder="Password" [(ngModel)]="password">
+    <br>
+    <button type="submit" (click)="logIn()">Sign in</button>
+    <br>
+    <p>Don't have an account? <a href="" routerLink="signup">Register here</a></p>
+<input type="button" value="Redirect to Product" (click)="redirectToProduct()">
+  </form>
 </div>

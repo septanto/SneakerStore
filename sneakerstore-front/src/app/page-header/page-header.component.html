@@ -1,27 +1,41 @@
 <div class="row">
     <div class="head col-4">
-        <h2>
+        <div>
             <a href="" routerLink="/" class="header">
-                <strong>THE<br>ZNEAKERZ<br>STORE</strong>
+                <strong>
+                    <p>THE</p>
+                    <p>SNEAKER</p>
+                    <p>STORE</p>
+                </strong>
             </a>
-        </h2>
+        </div>
     </div>
 
     <div class="menu col-8">
         <span id="menu-set">
-        <form action="">
-            <input type="text" name="search" placeholder="Type to search...">
-            <button type="submit"><i class="fa fa-search" aria-hidden="true" id="searchbtn"></i>
-        </button>
-            <button><i class="fa fa-shopping-cart" aria-hidden="true"></i>
-        </button>
-        </form>
-        <ul class="nav">
-            <li><a href="#">SHOP</a></li>
-            <li><a href="#">ABOUT</a></li>
-            <li><a href="#">BLOG</a></li>
-            <li><a href="" routerLink="/signin">LOGIN</a></li>
-        </ul>
+            <form action="">
+                <input type="text" name="search" placeholder="Type to search...">
+                <button type="submit">
+                    <i class="fa fa-search" aria-hidden="true" id="searchbtn"></i>
+                </button>
+                <button>
+                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                </button>
+            </form>
+            <ul class="nav">
+                <li>
+                    <a class="nav-item" href="#">SHOP</a>
+                </li>
+                <li>
+                    <a class="nav-item" href="#">ABOUT</a>
+                </li>
+                <li>
+                    <a class="nav-item" href="#">BLOG</a>
+                </li>
+                <li>
+                    <a href="" class="nav-item" routerLink="/signin">LOGIN</a>
+                </li>
+            </ul>
         </span>
     </div>
 </div>
